@@ -1,3 +1,5 @@
+<!-- This shows the College Page (First State)-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +7,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>College List</title>
 
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-    <script defer src="init-firebase.js"></script>
-    <script defer src="display_posts.js"></script>
+    
+    <!-- Linking Cornell Files -->
+    <script defer src="cornell.js"></script>
+    <script defer src = "display_cornellposts.js"></script>
+    
+    
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <form>
         <div id="chatbox-container">
             <div class="input-container">
-                <a href="createBlog.html"><button id="newbutton"><p id="newposttext">New Post</p></button></a>
-                <div><button id="clearbutton">Clear all Posts</button></div>   
-                <div id="all-posts"></div>
+                <a href="sendcornellMessages.html"><button id="newbutton1"><p id="newposttext">College 1</p></button></a>
+                <a href="sendmitMessages.html"><button id="newbutton2"><p id="newposttext">College 1</p></button></a>
             </div>
         </div>
     </form>
