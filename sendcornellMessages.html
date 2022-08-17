@@ -11,32 +11,40 @@
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script defer src="cornell.js"></script>
     <script defer src="sendcornellMessages.js"></script>
-    
 
-
+    <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="sendcornellMessagesHTML">
     <!-- FORM FOR CREATING A NEW POST -->
-    <div class="post">
-        <form>
-            <div class="heading">Create Post:</div>
-            <div class="inputText">
-                <input type="text" id="username" placeholder="Enter your username">
-                <input type="text" placeholder="Enter your text here" id="post-box">
-            </div>
-            <div class="buttons">
-                <a><button id="postbutton">Post</button></a>
-                <a><button id="clearbutton">Clear</button></a>
-                <a href = "collegePage.html"><button id="collegelistbutton">Go Back to College List</button></a>
-            </div>
-        </form>
-    </div>
+    <div class="postandall-messages">
+        <div class="post">
+            <form>
+                <div class="heading">College Cool Cids Chatrooms!</div>
+                <div class="inputText_and_buttons">
+                    <div class="inputText">
+                        <input type="text" id="username" placeholder="Enter your username">
+                        <input type="text" placeholder="Enter your text here" id="post-box">
+                    </div>
+                    <div class="buttons">
+                        <a><button id="postbutton">Post</button></a>
+                        <a><button id="clearbutton">Clear</button></a>
+                        <a href="collegePage.html"><button id="collegelistbutton">Go Back to College List</button></a>
 
-    <div id = "all-messages">
+                        <select id="collegeMenu">
+                            <option value="Cornell"> Cornell </option>
+                            <option value="MIT"> MIT </option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-            
+        <div id="all-messages">
+
+
+        </div>
     </div>
 </body>
 

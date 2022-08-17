@@ -1,3 +1,5 @@
+// API information
+
 const firebaseConfig = {
     apiKey: "AIzaSyBnnj7tk9x6D4GKG6SohwjLNzfrE_wTCG4",
     authDomain: "asc-team-1-project.firebaseapp.com",

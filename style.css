@@ -8,147 +8,146 @@
     secondary: #2E4756
     accent: #3C7A89
 */
-:root {
-    --primary: #1C2C35;
-    --secondary: #2C5763;
-    --accent: #63A9BB;
-}
 
-body {
-    /* size and colors */
-    height: 100vh;
-    background-color: var(--primary);
-    color: #fff;
+/* collegePage CSS */
 
-    /* flexbox styling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* text */
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-#title {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.post {
-    /*
-        @NOTE using responsive units (vw and vh) here.
-        learn more here: https://www.w3schools.com/cssref/css_units.asp
-    */
-    /* size and colors */
-    width: 90vw;
-    height: 90vh;
-    background-color: var(--secondary);
+.collegePageHTMLBody {
+    background-color: #ff9000;
+    height: 200px;
+    position: relative;
     
-    /* CSS box model */
-    margin: 0 auto;
-    padding: 1%;
-    border-radius: 10px;
 
-    /* flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.collegecoolcidsbackgroundimage {
+    opacity: 0.5;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100;
+}
+
+
+
+
+.collegecoolcidsdescription {
+    font-family: 'BioRhyme';
+    font-size: 20px;
+    color: rgb(229, 210, 154);
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.collegePageHTMLForm {
+    position: absolute;
+
+}
+
+#chatbox-container {
+    margin: 0;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+}
+
+/* sendcornellMessages CSS */
+
+.sendcornellMessagesHTML {
+    background-color: #ff9000;
+    height: 200px;
+    position: relative;
+}
+
+.postandall-messages {
+    margin: 0;
+    position: absolute;
+
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+    width: 100%;
+    display: block;
 }
 
 #all-messages {
     /* size and colors */
-    width: 90%;
+
     height: 70%;
     background-color: #fff;
     color: #000;
+    padding: 20px;
 
     /* CSS box model */
     border-radius: 10px;
-    margin: 1%;
 
     /* visiblity */
     overflow-wrap: normal;
     overflow-y: auto;
-}
 
-#typing-container {
-    /* size and colors */
-    width: 90%;
-    height: 10%;
-    background-color: var(--accent);
-    
-    /* CSS box model */
-    border-radius: 10px;
-    margin: 1%;
-    padding: 1%;
-
-    /* flexbox */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-form {
-    /* size and colors */
-    width: 80%;
-    height: 80%;
-
-    /* flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-form input {
-    width: 80%;
-    height: 80%;
-
-    font-size: 1.2em;
-    border-radius: 2px;
-}
-
-form label {
-    font-size: 1.2em;
-}
-
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#send-btn {
-    width: 15%;
-    height: 50%;
-
-    background-color: var(--secondary);
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-
-    font-size: 1.2em;
-}
-
-#send-btn:hover {
-    background-color: var(--primary);
-    box-shadow: 2px 2px 2px #4d4d4d;
-}
-
-#send-btn:active {
-    transform: scale(0.98);
+    background-image: cover;
+    margin-top: 20px;
 }
 
 .single-message {
+    word-break: break-all;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgb(229, 210, 154);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: 'BioRhyme';
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+
+    font-family: 'BioRhyme';
+    font-size: 50px;
+    color: rgb(229, 210, 154);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.inputText_and_buttons {
     display: flex;
+    justify-content: center;
 }
 
-.single-message p {
-    margin: 1%;
+#username, #post-box {
+    width: 300px;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.single-message-username {
-    font-weight: 600;
+#postbutton,
+#clearbutton, #collegelistbutton {
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
+#collegeMenu {
+    width: 100px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
