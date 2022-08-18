@@ -30,9 +30,16 @@ function makeSingleMessageHTML(usernameTxt, messageTxt) {
     let parentDiv = document.createElement('div');
     parentDiv.classList.add('single-message');
 
+    var dt = new Date();
+    let timeDisplay = document.createElement('p');
+    timeDisplay.classList.add('single-message');
+    timeDisplay.style.color = "#ff0000";
+    timeDisplay.innerHTML = dt.toLocaleDateString();
+    timeDisplay1 = timeDisplay.innerHTML
+
     let usernameDisplay = document.createElement('p');
     usernameDisplay.classList.add('single-message');
-    usernameDisplay.innerHTML = "[" + usernameTxt + "]" + " " + messageTxt;
+    usernameDisplay.innerHTML = "[" + usernameTxt + "]" + " " + messageTxt + " " + timeDisplay1;
     parentDiv.appendChild(usernameDisplay);
 
     
